@@ -6,7 +6,7 @@ para dispensar diferentes valores de notas.
 que um (ou mais de um) deles a processe.
 
 ### Classes envolvidas:
-- Bill: Classe que constrói os handlers para cada valor de nota (R\$100, R\$50, R\$20, R\$10, R\$5 e R\$1).
-- Dispenser: Classe que constrói uma cadeia de responsabilidade padrão e também permite construir cadeias customizadas.
-- Client: Classe que simula a interação do usuário com o caixa eletrônico. Dentro dela, temos exemplos usando a cadeia 
+- `Bill`: Classe que constrói os handlers para cada valor de nota (R\$100, R\$50, R\$20, R\$10, R\$5 e R\$1).
+- `Dispenser`: Classe que constrói uma cadeia de responsabilidade padrão e também permite construir cadeias customizadas.
+- `Client`: Classe que simula a interação do usuário com o caixa eletrônico. Dentro dela, temos exemplos usando a cadeia 
 padrão e uma cadeia customizada.
