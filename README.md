@@ -18,6 +18,7 @@ Os exemplos deste repositório são baseados no curso **[Padrões de Projeto em 
 | --- | --- | --- | --- |
 | Comportamental | Chain of Responsibility | `chain` | - Dispensador de cédulas (`billsDispenser`)<br/> - Fluxo de criação de usuário (`process`) |
 | Comportamental | Iterator | `iterator` | - Listagem e sumarização de produtos de um carrinho (`cart`)<br/> - Busca de canais de televisão (`tvChannel`) |
+| Comportamental | Strategy | `strategy` | - Operações matemáticas configuráveis (`calc`)<br/> - Gerador de pessoas com combinações de estratégias de alimentação, transporte e trabalho (`person`) |
 
 Cada exemplo inclui uma classe `Client` com método `main`, que pode ser executada para observar o padrão em funcionamento. As descrições estão nos arquivos `ExampleDescription.md` correspondentes.
 
@@ -29,9 +30,12 @@ behavioral-patterns/
     ├── chain/
     │   ├── billsDispenser/
     │   └── process/
-    └── iterator/
-        ├── cart/
-        └── tvChannel/
+    ├── iterator/
+    │   ├── cart/
+    │   └── tvChannel/
+    └── strategy/
+        ├── calc/
+        └── person/
 ```
 
 ## Como executar
@@ -46,5 +50,7 @@ Classes de entrada:
 - `br.com.examples.chain.process.Client`
 - `br.com.examples.iterator.cart.Client`
 - `br.com.examples.iterator.tvChannel.Client`
+- `br.com.examples.strategy.calc.Client`
+- `br.com.examples.strategy.person.Client`
 
 O projeto não utiliza Maven ou Gradle; os exemplos usam as bibliotecas padrão do Java.
