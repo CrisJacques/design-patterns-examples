@@ -19,6 +19,7 @@ Os exemplos deste repositório são baseados no curso **[Padrões de Projeto em 
 | Comportamental | Chain of Responsibility | `chain` | - Dispensador de cédulas (`billsDispenser`)<br/> - Fluxo de criação de usuário (`process`) |
 | Comportamental | Iterator | `iterator` | - Listagem e sumarização de produtos de um carrinho (`cart`)<br/> - Busca de canais de televisão (`tvChannel`) |
 | Comportamental | Strategy | `strategy` | - Operações matemáticas configuráveis (`calc`)<br/> - Gerador de pessoas com combinações de estratégias de alimentação, transporte e trabalho (`person`) |
+| Estrutural | Facade | `facade` | - Central de atendimento com cliente isolado do domínio, dependendo apenas da fachada (`callCenter/isolated`)<br/> - Central de atendimento com cliente dependendo do domínio e da fachada (`callCenter/withDomain`) |
 
 Cada exemplo inclui uma classe `Client` com método `main`, que pode ser executada para observar o padrão em funcionamento. As descrições estão nos arquivos `ExampleDescription.md` correspondentes.
 
@@ -36,6 +37,13 @@ behavioral-patterns/
     └── strategy/
         ├── calc/
         └── person/
+
+structural-patterns/
+└── src/main/java/br/com/examples/
+    └── facade/
+        └── callCenter/
+            ├── isolated/
+            └── withDomain/
 ```
 
 ## Como executar
@@ -52,5 +60,7 @@ Classes de entrada:
 - `br.com.examples.iterator.tvChannel.Client`
 - `br.com.examples.strategy.calc.Client`
 - `br.com.examples.strategy.person.Client`
+- `br.com.examples.facade.callCenter.isolated.Client`
+- `br.com.examples.facade.callCenter.withDomain.Client`
 
 O projeto não utiliza Maven ou Gradle; os exemplos usam as bibliotecas padrão do Java.
