@@ -17,6 +17,7 @@ Os exemplos deste repositório são baseados no curso **[Padrões de Projeto em 
 | Categoria | Padrão | Package | Exemplos |
 | --- | --- | --- | --- |
 | Comportamental | Chain of Responsibility | `chain` | - Dispensador de cédulas (`billsDispenser`)<br/> - Fluxo de criação de usuário (`process`) |
+| Comportamental | Command | `command` | - Comandos para controle de luzes com Alexa (`alexa`)<br/> - Execução e reversão de migrations (`migration`) |
 | Comportamental | Iterator | `iterator` | - Listagem e sumarização de produtos de um carrinho (`cart`)<br/> - Busca de canais de televisão (`tvChannel`) |
 | Comportamental | Strategy | `strategy` | - Operações matemáticas configuráveis (`calc`)<br/> - Gerador de pessoas com combinações de estratégias de alimentação, transporte e trabalho (`person`) |
 | Estrutural | Facade | `facade` | - Central de atendimento com cliente isolado do domínio, dependendo apenas da fachada (`callCenter/isolated`)<br/> - Central de atendimento com cliente dependendo do domínio e da fachada (`callCenter/withDomain`) |
@@ -31,6 +32,9 @@ behavioral-patterns/
     ├── chain/
     │   ├── billsDispenser/
     │   └── process/
+    ├── command/
+    │   ├── alexa/
+    │   └── migration/
     ├── iterator/
     │   ├── cart/
     │   └── tvChannel/
@@ -49,18 +53,22 @@ structural-patterns/
 ## Como executar
 
 1. Instale um JDK compatível com o código do projeto.
-2. Abra o repositório no IntelliJ IDEA. O diretório `behavioral-patterns/src/main/java` está configurado como raiz de código-fonte.
-3. Abra uma das classes `Client` dos exemplos e execute o método `main`.
+2. Abra o repositório no IntelliJ IDEA. Os diretórios `behavioral-patterns/src/main/java` e `structural-patterns/src/main/java` estão configurados como raízes de código-fonte.
+3. Abra uma das classes `Client` abaixo e execute o método `main`.
 
 Classes de entrada:
 
 - `br.com.examples.chain.billsDispenser.Client`
 - `br.com.examples.chain.process.Client`
+- `br.com.examples.command.alexa.Client`
+- `br.com.examples.command.migration.Client`
 - `br.com.examples.iterator.cart.Client`
 - `br.com.examples.iterator.tvChannel.Client`
 - `br.com.examples.strategy.calc.Client`
 - `br.com.examples.strategy.person.Client`
 - `br.com.examples.facade.callCenter.isolated.Client`
 - `br.com.examples.facade.callCenter.withDomain.Client`
+
+No código Java, cada classe está organizada em um `package` correspondente ao exemplo, por exemplo: `package br.com.examples.strategy.calc;`.
 
 O projeto não utiliza Maven ou Gradle; os exemplos usam as bibliotecas padrão do Java.
