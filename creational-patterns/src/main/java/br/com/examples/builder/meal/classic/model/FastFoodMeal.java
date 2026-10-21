@@ -1,7 +1,8 @@
 package br.com.examples.builder.meal.classic.model;
 
 /**
- * Classe de domínio simples, com os atributos e seus getters e setters.
+ * Classe de domínio simples, com os atributos e seus getters e setters, contendo apenas o construtor padrão (sem
+ * argumentos)
  * Os setters serão usados pelos Builders para construir os objetos passo a passo.
  */
 public class FastFoodMeal {

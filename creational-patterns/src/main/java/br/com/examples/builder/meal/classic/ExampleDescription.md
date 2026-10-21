@@ -1,9 +1,12 @@
+## Exemplo 1: Implementação clássica do padrão Builder - sistema de pedidos de refeições
+
 ### Descrição:
 - Este exemplo trata de uma simulação de um sistema de pedidos de refeições, utilizando o padrão de projeto Builder. 
 O objetivo é demonstrar como construir objetos complexos (neste caso, uma refeição) passo a passo, permitindo a criação 
 de diferentes variações de refeições sem a necessidade de criar múltiplos construtores.
 - Neste caso, está sendo feita uma implementação mais clássica do padrão Builder, contendo a classe diretora, que é 
-responsável por chamar os métodos dos builders em uma dada ordem.
+responsável por chamar os métodos dos builders em uma dada ordem. Além disso, a classe de domínio contém apenas o 
+construtor padrão (sem argumentos).
 - Como todos os Builders herdam de uma mesma classe abstrata, a classe diretora é compatível com qualquer Builder.
 
 ### Classes envolvidas:
