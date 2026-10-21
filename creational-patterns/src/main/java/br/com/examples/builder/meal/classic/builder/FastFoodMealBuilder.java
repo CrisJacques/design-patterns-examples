@@ -4,7 +4,9 @@ import br.com.examples.builder.meal.classic.model.FastFoodMeal;
 
 /**
  * Como cada builder terá sua própria forma de construir o objeto FastFoodMeal, todos os métodos desta classe
- * são abstratos
+ * possuem implementação vazia. Uma alternativa seria fazê-los ser abstratos, mas a desvantagem disso é que em
+ * builders concretos em que não faz sentido ter esses métodos teríamos que ter uma implementação vazia dentro
+ * da classe.
  */
 public abstract class FastFoodMealBuilder {
 	protected FastFoodMeal meal;
@@ -23,9 +25,9 @@ public abstract class FastFoodMealBuilder {
 		return meal;
 	}
 	
-	public abstract void buildDrink();
-	public abstract void buildMain();
-	public abstract void buildSide();
-	public abstract void buildDessert();
-	public abstract void buildGift();
+	public void buildDrink() {};
+	public void buildMain() {};
+	public void buildSide() {};
+	public void buildDessert() {};
+	public void buildGift() {};
 }

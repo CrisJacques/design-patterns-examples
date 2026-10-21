@@ -5,7 +5,8 @@ import br.com.examples.builder.meal.classic.model.FastFoodMeal;
 
 /**
  * A classe diretora é opcional. Quando existir, é ela quem irá definir a ordem dos passos de construção do objeto.
- * Quando ela não existir, o próprio cliente pode chamar os passos de construção da forma que preferir.
+ * Quando ela não existir, o próprio cliente pode chamar os passos de construção da forma que preferir. A implementação
+ * mais clássica do padrão Builder (livro do GOF) usa a classe diretora.
  *
  * Como todos os builders deste exemplo herdam da mesma classe abstrata, os métodos da classe diretora são compatíveis
  * com qualquer builder.
