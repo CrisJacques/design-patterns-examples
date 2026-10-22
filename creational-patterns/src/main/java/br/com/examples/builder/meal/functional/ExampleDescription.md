@@ -4,7 +4,8 @@
 - Este exemplo é uma variação do exemplo 2, onde:
   - Ao invés de ter uma classe Builder separada, se utilizou uma classe Builder definida dentro da classe de domínio 
 (Inner Class).
-  - A classe de domínio é imutável, ou seja, não possui setters e seus atributos são final.
+  - A classe de domínio é imutável, ou seja, não possui setters e seus atributos são final. Objetos imutáveis são ótimos
+para trabalhar em contextos de múltiplas threads, pois não há risco de alteração do estado do objeto após sua criação.
   - O cliente chama o Builder da classe de domínio diretamente.
 
 ### Classes envvolvidas:
