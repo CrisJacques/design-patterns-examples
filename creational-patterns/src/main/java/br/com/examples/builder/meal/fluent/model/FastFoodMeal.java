@@ -2,7 +2,6 @@ package br.com.examples.builder.meal.fluent.model;
 
 /**
  * Classe de domínio, com os atributos e seus getters e setters, contendo construtor com argumentos.
- * Os setters serão usados pelo Builder para construir os objetos passo a passo.
  */
 public class FastFoodMeal {
 
