@@ -1,7 +1,7 @@
-package br.com.examples.builder.meal.classic.director;
+package br.com.examples.builder.classic.director;
 
-import br.com.examples.builder.meal.classic.builder.FastFoodMealBuilder;
-import br.com.examples.builder.meal.classic.model.FastFoodMeal;
+import br.com.examples.builder.classic.builder.FastFoodMealBuilder;
+import br.com.examples.builder.classic.model.FastFoodMeal;
 
 /**
  * A classe diretora é opcional. Quando existir, é ela quem irá definir a ordem dos passos de construção do objeto.

@@ -1,6 +1,6 @@
-package br.com.examples.builder.meal.classic.builder;
+package br.com.examples.builder.classic.builder;
 
-import br.com.examples.builder.meal.classic.model.FastFoodMeal;
+import br.com.examples.builder.classic.model.FastFoodMeal;
 
 /**
  * Como cada builder terá sua própria forma de construir o objeto FastFoodMeal, todos os métodos desta classe

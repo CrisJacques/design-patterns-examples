@@ -1,4 +1,4 @@
-package br.com.examples.builder.meal.fluent.model;
+package br.com.examples.builder.fluent.model;
 
 /**
  * Classe de domínio, com os atributos e seus getters e setters, contendo construtor com argumentos.

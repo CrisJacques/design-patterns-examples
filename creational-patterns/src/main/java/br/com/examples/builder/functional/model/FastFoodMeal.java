@@ -1,4 +1,4 @@
-package br.com.examples.builder.meal.functional.model;
+package br.com.examples.builder.functional.model;
 
 public class FastFoodMeal {
 
