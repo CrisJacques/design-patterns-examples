@@ -1,4 +1,4 @@
-package br.com.examples.builder.meal.classic.model;
+package br.com.examples.builder.classic.model;
 
 /**
  * Classe de domínio simples, com os atributos e seus getters e setters, contendo apenas o construtor padrão (sem

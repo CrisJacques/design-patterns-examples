@@ -1,6 +1,6 @@
-package br.com.examples.builder.meal.functional;
+package br.com.examples.builder.functional;
 
-import br.com.examples.builder.meal.functional.model.FastFoodMeal;
+import br.com.examples.builder.functional.model.FastFoodMeal;
 
 public class Client {
 

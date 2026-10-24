@@ -1,7 +1,7 @@
-package br.com.examples.builder.meal.fluent;
+package br.com.examples.builder.fluent;
 
-import br.com.examples.builder.meal.fluent.model.FastFoodMeal;
-import br.com.examples.builder.meal.fluent.model.builder.FastFoodMealBuilder;
+import br.com.examples.builder.fluent.model.FastFoodMeal;
+import br.com.examples.builder.fluent.model.builder.FastFoodMealBuilder;
 
 /**
  * Classe cliente que cria diversas refeições através do mesmo Builder e usa fluent API.

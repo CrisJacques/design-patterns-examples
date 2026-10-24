@@ -1,6 +1,6 @@
-package br.com.examples.builder.meal.fluent.model.builder;
+package br.com.examples.builder.fluent.model.builder;
 
-import br.com.examples.builder.meal.fluent.model.FastFoodMeal;
+import br.com.examples.builder.fluent.model.FastFoodMeal;
 
 /**
  * Builder de refeições. Diferentemente do exemplo 1, este Builder é bem mais genérico, permitindo construir uma

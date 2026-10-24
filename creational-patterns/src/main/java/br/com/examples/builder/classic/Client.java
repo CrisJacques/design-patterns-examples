@@ -1,7 +1,8 @@
-package br.com.examples.builder.meal.classic;
+package br.com.examples.builder.classic;
 
-import br.com.examples.builder.meal.classic.builder.*;
-import br.com.examples.builder.meal.classic.director.MealDirector;
+import br.com.examples.builder.classic.builder.*;
+import br.com.examples.builder.classic.builder.*;
+import br.com.examples.builder.classic.director.MealDirector;
 
 /**
  * Classe cliente que utiliza a classe diretora para construir diversos tipos de FastFoodMeal. Conhece apenas a classe

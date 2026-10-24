@@ -1,4 +1,4 @@
-package br.com.examples.builder.meal.classic.builder;
+package br.com.examples.builder.classic.builder;
 
 public class FatMealBuilder extends FastFoodMealBuilder {
 	@Override

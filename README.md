@@ -16,7 +16,7 @@ Os exemplos deste repositório são baseados no curso **[Padrões de Projeto em 
 
 | Categoria | Padrão | Package | Exemplos |
 | --- | --- | --- | --- |
-| Criacional | Builder | `builder/meal` | - Construção clássica de refeições com builders e classe diretora (`classic`)<br/> - Construção com Builder genérico e fluent API (`fluent`)<br/> - Construção funcional com Builder interno e refeição imutável (`functional`) |
+| Criacional | Builder | `builder` | - Construção clássica de refeições com builders e classe diretora (`classic`)<br/> - Construção com Builder genérico e fluent API (`fluent`)<br/> - Construção funcional com Builder interno e refeição imutável (`functional`) |
 | Comportamental | Chain of Responsibility | `chain` | - Dispensador de cédulas (`billsDispenser`)<br/> - Fluxo de criação de usuário (`process`) |
 | Comportamental | Command | `command` | - Comandos para controle de luzes com Alexa (`alexa`)<br/> - Execução e reversão de migrations (`migration`) |
 | Comportamental | Iterator | `iterator` | - Listagem e sumarização de produtos de um carrinho (`cart`)<br/> - Busca de canais de televisão (`tvChannel`) |
@@ -31,10 +31,9 @@ Cada exemplo inclui uma classe `Client` com método `main`, que pode ser executa
 creational-patterns/
 └── src/main/java/br/com/examples/
     └── builder/
-        └── meal/
-            ├── classic/
-            ├── fluent/
-            └── functional/
+        ├── classic/
+        ├── fluent/
+        └── functional/
 
 behavioral-patterns/
 └── src/main/java/br/com/examples/
@@ -67,9 +66,9 @@ structural-patterns/
 
 Classes de entrada:
 
-- `br.com.examples.builder.meal.classic.Client`
-- `br.com.examples.builder.meal.fluent.Client`
-- `br.com.examples.builder.meal.functional.Client`
+- `br.com.examples.builder.classic.Client`
+- `br.com.examples.builder.fluent.Client`
+- `br.com.examples.builder.functional.Client`
 - `br.com.examples.chain.billsDispenser.Client`
 - `br.com.examples.chain.process.Client`
 - `br.com.examples.command.alexa.Client`
