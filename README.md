@@ -17,6 +17,7 @@ Os exemplos deste repositório são baseados no curso **[Padrões de Projeto em 
 | Categoria | Padrão | Package | Exemplos |
 | --- | --- | --- | --- |
 | Criacional | Builder | `builder` | - Construção clássica de refeições com builders e classe diretora (`classic`)<br/> - Construção com Builder genérico e fluent API (`fluent`)<br/> - Construção funcional com Builder interno e refeição imutável (`functional`) |
+| Criacional | Factory Method | `factory` | - Criação clássica de iPhones, com uma Factory por modelo (`classic`)<br/> - Criação simplificada de iPhones, com uma Factory por geração (`halfSimple`)<br/> - Criação centralizada de iPhones com Simple Factory (`simple`) |
 | Comportamental | Chain of Responsibility | `chain` | - Dispensador de cédulas (`billsDispenser`)<br/> - Fluxo de criação de usuário (`process`) |
 | Comportamental | Command | `command` | - Comandos para controle de luzes com Alexa (`alexa`)<br/> - Execução e reversão de migrations (`migration`) |
 | Comportamental | Iterator | `iterator` | - Listagem e sumarização de produtos de um carrinho (`cart`)<br/> - Busca de canais de televisão (`tvChannel`) |
@@ -30,10 +31,14 @@ Cada exemplo inclui uma classe `Client` com método `main`, que pode ser executa
 ```text
 creational-patterns/
 └── src/main/java/br/com/examples/
-    └── builder/
+    ├── builder/
         ├── classic/
         ├── fluent/
         └── functional/
+    └── factory/
+        ├── classic/
+        ├── halfSimple/
+        └── simple/
 
 behavioral-patterns/
 └── src/main/java/br/com/examples/
@@ -69,6 +74,9 @@ Classes de entrada:
 - `br.com.examples.builder.classic.Client`
 - `br.com.examples.builder.fluent.Client`
 - `br.com.examples.builder.functional.Client`
+- `br.com.examples.factory.classic.Client`
+- `br.com.examples.factory.halfSimple.Client`
+- `br.com.examples.factory.simple.Client`
 - `br.com.examples.chain.billsDispenser.Client`
 - `br.com.examples.chain.process.Client`
 - `br.com.examples.command.alexa.Client`
