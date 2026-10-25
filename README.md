@@ -18,6 +18,7 @@ Os exemplos deste repositório são baseados no curso **[Padrões de Projeto em 
 | --- | --- | --- | --- |
 | Criacional | Builder | `builder` | - Construção clássica de refeições com builders e classe diretora (`classic`)<br/> - Construção com Builder genérico e fluent API (`fluent`)<br/> - Construção funcional com Builder interno e refeição imutável (`functional`) |
 | Criacional | Factory Method | `factory` | - Criação clássica de iPhones, com uma Factory por modelo (`classic`)<br/> - Criação simplificada de iPhones, com uma Factory por geração (`halfSimple`)<br/> - Criação centralizada de iPhones com Simple Factory (`simple`) |
+| Criacional | Abstract Factory | `abstractfactory` | - Criação de iPhones com regras de país e produtos relacionados (`apple`)<br/> - Criação de serviços de aplicação com diferentes implementações de infraestrutura (`app/service`) |
 | Comportamental | Chain of Responsibility | `chain` | - Dispensador de cédulas (`billsDispenser`)<br/> - Fluxo de criação de usuário (`process`) |
 | Comportamental | Command | `command` | - Comandos para controle de luzes com Alexa (`alexa`)<br/> - Execução e reversão de migrations (`migration`) |
 | Comportamental | Iterator | `iterator` | - Listagem e sumarização de produtos de um carrinho (`cart`)<br/> - Busca de canais de televisão (`tvChannel`) |
@@ -31,6 +32,10 @@ Cada exemplo inclui uma classe `Client` com método `main`, que pode ser executa
 ```text
 creational-patterns/
 └── src/main/java/br/com/examples/
+    ├── abstractfactory/
+    │   ├── app/
+    │   │   └── service/
+    │   └── apple/
     ├── builder/
         ├── classic/
         ├── fluent/
@@ -71,6 +76,8 @@ structural-patterns/
 
 Classes de entrada:
 
+- `br.com.examples.abstractfactory.apple.Client`
+- `br.com.examples.abstractfactory.app.service.Client`
 - `br.com.examples.builder.classic.Client`
 - `br.com.examples.builder.fluent.Client`
 - `br.com.examples.builder.functional.Client`
