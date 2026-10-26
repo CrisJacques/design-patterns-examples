@@ -23,6 +23,7 @@ Os exemplos deste repositório são baseados no curso **[Padrões de Projeto em 
 | Comportamental | Command | `command` | - Comandos para controle de luzes com Alexa (`alexa`)<br/> - Execução e reversão de migrations (`migration`) |
 | Comportamental | Iterator | `iterator` | - Listagem e sumarização de produtos de um carrinho (`cart`)<br/> - Busca de canais de televisão (`tvChannel`) |
 | Comportamental | Strategy | `strategy` | - Operações matemáticas configuráveis (`calc`)<br/> - Gerador de pessoas com combinações de estratégias de alimentação, transporte e trabalho (`person`) |
+| Estrutural | Decorator | `decorator` | - Café com opções de leite e dose dupla, sem criar subclasses para cada combinação (`coffeeShop`) |
 | Estrutural | Facade | `facade` | - Central de atendimento com cliente isolado do domínio, dependendo apenas da fachada (`callCenter/isolated`)<br/> - Central de atendimento com cliente dependendo do domínio e da fachada (`callCenter/withDomain`) |
 
 Cada exemplo inclui uma classe `Client` com método `main`, que pode ser executada para observar o padrão em funcionamento. As descrições estão nos arquivos `ExampleDescription.md` correspondentes.
@@ -62,6 +63,8 @@ behavioral-patterns/
 
 structural-patterns/
 └── src/main/java/br/com/examples/
+    ├── decorator/
+    │   └── coffeeShop/
     └── facade/
         └── callCenter/
             ├── isolated/
@@ -92,6 +95,7 @@ Classes de entrada:
 - `br.com.examples.iterator.tvChannel.Client`
 - `br.com.examples.strategy.calc.Client`
 - `br.com.examples.strategy.person.Client`
+- `br.com.examples.decorator.coffeeShop.Client`
 - `br.com.examples.facade.callCenter.isolated.Client`
 - `br.com.examples.facade.callCenter.withDomain.Client`
 
