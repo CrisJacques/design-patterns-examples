@@ -25,6 +25,7 @@ Os exemplos deste repositório são baseados no curso **[Padrões de Projeto em 
 | Comportamental | Strategy | `strategy` | - Operações matemáticas configuráveis (`calc`)<br/> - Gerador de pessoas com combinações de estratégias de alimentação, transporte e trabalho (`person`) |
 | Estrutural | Decorator | `decorator` | - Café com opções de leite e dose dupla, sem criar subclasses para cada combinação (`coffeeShop`) |
 | Estrutural | Facade | `facade` | - Central de atendimento com cliente isolado do domínio, dependendo apenas da fachada (`callCenter/isolated`)<br/> - Central de atendimento com cliente dependendo do domínio e da fachada (`callCenter/withDomain`) |
+| Estrutural | Proxy | `proxy` | - Banco e ATM com controle das operações permitidas pelo caixa eletrônico (`bank`)<br/> - Carregamento de recursos com controle de acesso, lazy loading e cache (`remoteResource`) |
 
 Cada exemplo inclui uma classe `Client` com método `main`, que pode ser executada para observar o padrão em funcionamento. As descrições estão nos arquivos `ExampleDescription.md` correspondentes.
 
@@ -65,10 +66,13 @@ structural-patterns/
 └── src/main/java/br/com/examples/
     ├── decorator/
     │   └── coffeeShop/
-    └── facade/
-        └── callCenter/
-            ├── isolated/
-            └── withDomain/
+    ├── facade/
+    │   └── callCenter/
+    │       ├── isolated/
+    │       └── withDomain/
+    └── proxy/
+        ├── bank/
+        └── remoteResource/
 ```
 
 ## Como executar
@@ -98,6 +102,8 @@ Classes de entrada:
 - `br.com.examples.decorator.coffeeShop.Client`
 - `br.com.examples.facade.callCenter.isolated.Client`
 - `br.com.examples.facade.callCenter.withDomain.Client`
+- `br.com.examples.proxy.bank.Client`
+- `br.com.examples.proxy.remoteResource.Client`
 
 No código Java, cada classe está organizada em um `package` correspondente ao exemplo, por exemplo: `package br.com.examples.strategy.calc;`.
 
